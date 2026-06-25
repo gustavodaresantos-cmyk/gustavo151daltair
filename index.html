@@ -73,6 +73,26 @@
             color: #ddd;
         }
 
+        /* Container Responsivo para o Vídeo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-top: 30px; 
+            height: 0; 
+            overflow: hidden;
+            margin-top: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         /* Grid de Categorias */
         .grid-categorias {
             display: grid;
@@ -142,6 +162,7 @@
 
     <nav>
         <a href="#historia">História</a>
+        <a href="#video">Vídeo</a>
         <a href="#categorias">Categorias</a>
         <a href="#tecnologia">Tecnologia</a>
     </nav>
@@ -152,6 +173,14 @@
             <h2>A Evolução da Velocidade</h2>
             <p>Desde os primórdios do automobilismo no final do século XIX, os carros de corrida têm sido o laboratório de testes para a engenharia automotiva. O que começou como competições de carruagens motorizadas evoluiu para máquinas altamente tecnológicas capazes de ultrapassar os 300 km/h com extrema segurança.</p>
             <p>A busca incessante por velocidade, aerodinâmica e eficiência moldou não apenas as pistas, mas também os carros que dirigimos no dia a dia hoje.</p>
+        </section>
+
+        <section id="video">
+            <h2>Vídeo em Destaque</h2>
+            <p>Assista abaixo a uma demonstração incrível do poder e do ronco dos motores nas pistas:</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4fEPDC9rfKM?si=8QEULD9MS6E8lioE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="categorias">
